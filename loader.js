@@ -3,6 +3,9 @@
 */
 var loader = function(){
     
+    var doc = document,
+        body= doc.body;
+    
     // load scripts/stylesheets synchronously
     // usage: loader.syncLoad( src1, src2, href1, href2, ... )
     function syncLoad(){
