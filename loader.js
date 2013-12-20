@@ -3,6 +3,8 @@
 */
 var loader = function(){
     
+    // load scripts/stylesheets synchronously
+    // usage: loader.syncLoad( src1, src2, href1, href2, ... )
     function syncLoad(){
         var arg = arguments,
             len = arg.length;
@@ -11,7 +13,8 @@ var loader = function(){
             len -- ;
         }
     }
-    
+    // load scripts/stylesheets asynchronously
+    // usage: loader.asyncLoad( src1, src2, href1, href2, ... )
     function asyncLoad(){
         var arg = arguments,
             arr = [],
